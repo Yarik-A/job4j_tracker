@@ -1,4 +1,4 @@
-package pojo;
+package ru.job4j.pojo;
 
 public class Library {
 
@@ -27,7 +27,7 @@ public class Library {
         System.out.println();
         for (int i = 0; i < books.length; i++) {
             Book book = books[i];
-            if (book.getName().equals("Clean code")) {
+            if ("Clean code".equals(book.getName())) {
                 System.out.println(book.getName() + ", " + book.getPages() + " pages");
             }
         }
